@@ -15,7 +15,7 @@ const HeroSection = () => {
         <h1 className="font-script text-6xl md:text-8xl text-primary mb-4 animate-fade-in-up delay-200 drop-shadow-lg">
           Gabriel
         </h1>
-        <h2 className="font-script text-5xl md:text-7xl text-primary mb-8 animate-fade-in-up delay-300 px-6 py-2 rounded-full bg-[#d7ecf9]">
+        <h2 className="font-script text-5xl text-primary mb-8 animate-fade-in-up delay-300 px-6 py-2 rounded-full bg-[#d7ecf9] md:text-8xl">
           Rafael
         </h2>
 
