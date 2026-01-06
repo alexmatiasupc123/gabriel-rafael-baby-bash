@@ -1,13 +1,10 @@
 import heroDecorations from "@/assets/hero-decorations.png";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-12 overflow-hidden">
+  return <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-12 overflow-hidden">
       {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: `url(${heroDecorations})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
+      backgroundImage: `url(${heroDecorations})`
+    }} />
       
       {/* Content */}
       <div className="relative z-20 text-center max-w-md mx-auto">
@@ -18,7 +15,7 @@ const HeroSection = () => {
         <h1 className="font-script text-6xl md:text-8xl text-primary mb-4 animate-fade-in-up delay-200 drop-shadow-lg">
           Gabriel
         </h1>
-        <h2 className="font-script text-5xl md:text-7xl text-primary mb-8 animate-fade-in-up delay-300 bg-cream px-6 py-2 rounded-full">
+        <h2 className="font-script text-5xl md:text-7xl text-primary mb-8 animate-fade-in-up delay-300 px-6 py-2 rounded-full bg-[#d7ecf9]">
           Rafael
         </h2>
 
@@ -42,8 +39,6 @@ const HeroSection = () => {
           <div className="w-1 h-3 bg-primary/50 rounded-full mt-2 animate-pulse" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
