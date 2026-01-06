@@ -6,12 +6,15 @@ const BackgroundMusic = () => {
   const [showPrompt, setShowPrompt] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  // Hercules - Go the Distance / Llegaré a mi meta
-  const musicUrl = "https://www.youtube.com/embed/zgnHF2CwrPs?autoplay=1&loop=1&playlist=zgnHF2CwrPs";
+  // Hercules - Go the Distance / Llegaré a mi meta (audio file)
+  const musicUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+  
+  // YouTube video ID for Hercules song
+  const youtubeVideoId = "zgnHF2CwrPs";
 
   const handlePlayMusic = () => {
-    setIsPlaying(true);
     setShowPrompt(false);
+    setIsPlaying(true);
   };
 
   const handleMuteToggle = () => {
@@ -41,14 +44,18 @@ const BackgroundMusic = () => {
         </div>
       )}
 
-      {/* YouTube embed for music (hidden) */}
+      {/* YouTube iframe for music - visible when playing */}
       {isPlaying && (
-        <iframe
-          className="fixed w-0 h-0 opacity-0 pointer-events-none"
-          src={musicUrl}
-          allow="autoplay"
-          title="Background Music"
-        />
+        <div className="fixed bottom-0 left-0 w-0 h-0 overflow-hidden pointer-events-none opacity-0">
+          <iframe
+            width="1"
+            height="1"
+            src={`https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&loop=1&playlist=${youtubeVideoId}&controls=0`}
+            title="Background Music"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
       )}
 
       {/* Music control button */}
