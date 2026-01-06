@@ -1,12 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import BackgroundMusic from "@/components/BackgroundMusic";
+import FloatingElements from "@/components/FloatingElements";
+import Watermarks from "@/components/Watermarks";
+import HeroSection from "@/components/HeroSection";
+import ParentsSection from "@/components/ParentsSection";
+import CountdownTimer from "@/components/CountdownTimer";
+import EventDetails from "@/components/EventDetails";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen gradient-sky relative overflow-hidden">
+      {/* Background Music with entry prompt */}
+      <BackgroundMusic />
+      
+      {/* Floating decorative elements */}
+      <FloatingElements />
+      
+      {/* Watermarks */}
+      <Watermarks />
+      
+      {/* Main content */}
+      <main className="relative">
+        <HeroSection />
+        <ParentsSection />
+        <CountdownTimer />
+        <EventDetails />
+        <Footer />
+      </main>
     </div>
   );
 };
