@@ -9,7 +9,7 @@ const BackgroundMusic = () => {
   const musicUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
   // YouTube video ID for Hercules song
-  const youtubeVideoId = "zgnHF2CwrPs";
+  const youtubeVideoId = "PyVzsEXfh1M";
   const handlePlayMusic = () => {
     setShowPrompt(false);
     setIsPlaying(true);
