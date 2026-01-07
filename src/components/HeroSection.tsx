@@ -1,4 +1,4 @@
-import heroDecorations from "@/assets/hero-decorations.png";
+import heroDecorations from "@/assets/hero-decorations.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-12 overflow-hidden">
       {/* Background image */}
@@ -14,15 +14,15 @@ const HeroSection = () => {
         
         <h1 className="font-script text-6xl md:text-8xl text-primary mb-4 animate-fade-in-up delay-200 drop-shadow-lg">
           Gabriel
+        </h1>        
+        <h1 className="font-script text-6xl md:text-8xl text-primary mb-4 animate-fade-in-up delay-200 drop-shadow-lg">
+          Rafael
         </h1>
-        <h2 className="font-script text-5xl text-primary mb-8 animate-fade-in-up delay-300 px-6 py-2 rounded-full bg-[#d7ecf9] md:text-8xl">
-          <span className="drop-shadow-lg">Rafael</span>
-        </h2>
 
         <div className="w-32 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-8 animate-fade-in-up delay-500" />
 
         <p className="font-body text-foreground/80 text-base md:text-lg animate-fade-in-up delay-700">
-          Acompáñanos a celebrar la próxima llegada de nuestro pequeño angelito
+          Acompáñanos a celebrar la próxima llegada de nuestro pequeño hijo.
         </p>
 
         {/* Decorative elements */}
