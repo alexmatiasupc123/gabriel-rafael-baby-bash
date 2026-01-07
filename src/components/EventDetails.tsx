@@ -19,7 +19,7 @@ const EventDetails = () => {
               </div>
               <div>
                 <p className="font-body text-muted-foreground text-sm uppercase tracking-wider">Fecha</p>
-                <p className="font-script text-2xl text-foreground">21 de Febrero del 2026</p>
+                <p className="font-script text-2xl text-foreground">Sábado 21 de Febrero del 2026</p>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const EventDetails = () => {
               </div>
               <div className="flex-1">
                 <p className="font-body text-muted-foreground text-sm uppercase tracking-wider">Ubicación</p>
-                <p className="font-script text-xl text-foreground">Condominio Nueva Vista</p>
+                <p className="font-script text-xl text-foreground">Condominio Nueva Vista - Sala SUM 2</p>
                 <p className="font-body text-sm text-muted-foreground mt-1">
                   Av. Venezuela 2597 - Bellavista
                 </p>
