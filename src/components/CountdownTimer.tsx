@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import babyPhoto from "@/assets/baby-photo.png";
 
 const CountdownTimer = () => {
   const targetDate = new Date("2026-02-21T20:00:00").getTime();
@@ -36,7 +37,7 @@ const CountdownTimer = () => {
   ];
 
   return (
-    <section className="py-16 px-4 relative z-20">
+    <section className="py-12 px-4 relative z-20" >
       <div className="max-w-md mx-auto text-center">
         <h3 className="font-script text-4xl text-primary mb-8 animate-fade-in-up">
           Cuenta Regresiva
@@ -58,8 +59,30 @@ const CountdownTimer = () => {
           ))}
         </div>
 
-        <p className="font-body text-muted-foreground text-sm mt-6 animate-fade-in-up delay-300">
-          ¡Te esperamos con mucha ilusión! 💙
+        {/* Photo frame */}
+        <div className="relative animate-fade-in-up mt-10">
+          {/* Decorative frame */}
+          <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-baby-blue/30 to-primary/20 rounded-3xl blur-sm" />
+          <div className="absolute -inset-2 bg-card rounded-2xl shadow-card" />     
+
+          {/* Photo */}
+          <div className="relative rounded-xl overflow-hidden shadow-soft">
+            <img 
+              src={babyPhoto} 
+              alt="Futuros padres de Gabriel Rafael"
+              className="w-full h-auto object-cover"
+            />
+            
+            {/* Overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
+          </div>
+        </div>
+
+        <p className="font-body text-muted-foreground text-sm mt-6 animate-fade-in-up delay-300 italic">
+          La dulce espera está llegando a su fin. Nuestro príncipe llega a completar nuestras vidas. Contamos los días para celebrar juntos este momento tan especial.
+        </p>
+        <p className="font-body text-muted-foreground text-sm mt-6 animate-fade-in-up delay-300 font-semibold">
+          Te esperamos hijo 💙
         </p>
       </div>
     </section>

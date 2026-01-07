@@ -41,6 +41,8 @@ const BackgroundMusic = () => {
       {!showPrompt && <button onClick={handleMuteToggle} className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-primary/90 text-primary-foreground shadow-card flex items-center justify-center hover:shadow-glow transition-all duration-300" aria-label={isPlaying ? "Silenciar música" : "Reproducir música"}>
           {isPlaying ? <Volume2 className="w-6 h-6" /> : <VolumeX className="w-6 h-6" />}
         </button>}
+
+       
     </>;
 };
 export default BackgroundMusic;

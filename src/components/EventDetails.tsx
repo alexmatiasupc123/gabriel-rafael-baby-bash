@@ -4,7 +4,7 @@ const EventDetails = () => {
   const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Av.+Venezuela+2597+Bellavista+Condominio+Nueva+Vista+Lima+Peru";
 
   return (
-    <section className="py-16 px-4 relative z-20">
+    <section className="py-12 px-4 relative z-20">
       <div className="max-w-md mx-auto">
         <h3 className="font-script text-4xl text-center text-primary mb-12 animate-fade-in-up">
           Detalles del Evento
