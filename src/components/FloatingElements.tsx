@@ -1,5 +1,5 @@
 import balloonsImg from "@/assets/balloons-left.png";
-import teddyBear from "@/assets/teddy-bear.png";
+import teddyBear from "@/assets/teddy-bear2.png";
 import soccerBall from "@/assets/soccer-ball.png";
 
 const FloatingElements = () => {

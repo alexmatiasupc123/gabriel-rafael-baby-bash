@@ -6,6 +6,7 @@ import ParentsSection from "@/components/ParentsSection";
 import CountdownTimer from "@/components/CountdownTimer";
 import EventDetails from "@/components/EventDetails";
 import Footer from "@/components/Footer";
+import GiftRegistry from "@/components/GiftRegistry";
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
         <ParentsSection />
         <CountdownTimer />
         <EventDetails />
+        <GiftRegistry />
         <Footer />
       </main>
     </div>

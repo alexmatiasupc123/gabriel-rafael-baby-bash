@@ -1,7 +1,13 @@
-import { Calendar, Clock, MapPin } from "lucide-react";
+import { Calendar, Clock, MapPin, CalendarPlus } from "lucide-react";
 
 const EventDetails = () => {
   const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Av.+Venezuela+2597+Bellavista+Condominio+Nueva+Vista+Lima+Peru";
+
+  // --- LÓGICA AGREGADA PARA CALENDARIO ---
+  // Las fechas para Google Calendar deben ser precisas (usualmente UTC). 
+  // 8:00 PM Perú (GMT-5) es 1:00 AM del día siguiente en UTC.
+  const calendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baby+Shower+Gabriel+Rafael&dates=20260222T010000Z/20260222T050000Z&details=Te+esperamos+para+celebrar+la+llegada+de+Gabriel+Rafael!&location=Condominio+Nueva+Vista+-+Sala+SUM+2,+Av.+Venezuela+2597,+Bellavista,+Lima&ctz=America/Lima";
+  // ---------------------------------------
 
   return (
     <section className="py-12 px-4 relative z-20">
@@ -36,6 +42,20 @@ const EventDetails = () => {
                 <p className="font-body text-sm text-muted-foreground">Hora exacta</p>
               </div>
             </div>
+
+            {/* --- NUEVO BOTÓN AGREGADO --- */}
+            <a 
+              href={calendarUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block w-full mt-2"
+            >
+              <button className="w-full flex items-center justify-center gap-2 bg-primary/90 text-primary-foreground py-2 px-4 rounded-xl text-sm font-medium hover:bg-primary transition-colors duration-300">
+                <CalendarPlus size={16} />
+                Agendar en Google Calendar
+              </button>
+            </a>
+            {/* --------------------------- */}
           </div>
 
           {/* Location */}

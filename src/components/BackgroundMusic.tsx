@@ -5,7 +5,7 @@ const BackgroundMusic = () => {
   const [showPrompt, setShowPrompt] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const musicUrl = "/hercules.mp3";
+  const musicUrl = "/hercules-compress.mp3";
 
   const handlePlayMusic = () => {
     if (audioRef.current) {

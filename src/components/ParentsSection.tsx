@@ -1,4 +1,4 @@
-import parentsPhoto from "@/assets/parents-photo.png";
+import parentsPhoto from "@/assets/parents-photo2.png";
 
 const ParentsSection = () => {
   return (
