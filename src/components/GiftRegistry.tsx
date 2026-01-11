@@ -11,17 +11,17 @@ const GiftRegistry = () => {
     "Set de alimentación de silicona (platos, vasos, cubiertos) 🍽️",
     "Aspirador o Succionador Eléctrico Nasal para bebé👃",
     "Silla de comer para bebé 🍴",
-    "Mecedora de bebé 🪑",
-    "Biberones anticólicos 🍼",
+    "Mecedora de bebé 🪑",    
     "Calentador de biberones ♨️",
+    "Biberones anticólicos 🍼",
     "Kit de estimulación temprana 📚",
-
-    "Pañales (Etapa 1 o 2) 👶",
-    "Toallitas húmedas",
-    "Ropita de 3 a 6 meses 👕",
-    "Shampoo y jabón de bebé 🧴",
-    "Medias y gorritos 🧦",
-    "Juguetes de estimulación 🧸",
+    "Almohada de lactancia 🤱",
+    "Almohada antireflujo para bebé 🛏️",
+    "Canguro o portabebé ergonómico 🧑‍🍼",
+    "Kit de cuidado para bebé (cortaúñas, cepillo, termómetro) 🩺",
+    "Baberos, mantas, toallas de baño 🧣",
+    "Ropita de recién nacido (bodys, etc) 👶",  
+    "Juguetes de estimulación 🧸",    
     "O lo que nazca de tu corazón 💙"
   ];
 
@@ -94,7 +94,7 @@ const GiftRegistry = () => {
                   {gifts.map((gift, index) => (
                     <li key={index} className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl border border-border hover:border-primary/50 transition-colors">
                       <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
-                      <span className="font-body text-foreground text-sm md:text-base">{gift}</span>
+                      <span className="font-body text-foreground text-sm md:text-base text-start">{gift}</span>
                     </li>
                   ))}
                 </ul>
