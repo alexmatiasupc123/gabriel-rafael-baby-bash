@@ -1,13 +1,24 @@
-import { Calendar, Clock, MapPin, CalendarPlus } from "lucide-react";
+import { Calendar, Clock, MapPin, CalendarPlus,Command } from "lucide-react";
 
 const EventDetails = () => {
   const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Av.+Venezuela+2597+Bellavista+Condominio+Nueva+Vista+Lima+Peru";
+
+  const startDate = "20260222T010000Z"; 
+  const endDate = "20260222T050000Z"; 
+    const eventTitle = "Baby Shower Gabriel Rafael";
+  const eventDetails = "Acompáñanos a celebrar la llegada de Gabriel Rafael.";
+  const eventLocation = "Condominio Nueva Vista - Sala SUM 2, Av. Venezuela 2597, Bellavista, Lima, Perú";
+  
 
   // --- LÓGICA AGREGADA PARA CALENDARIO ---
   // Las fechas para Google Calendar deben ser precisas (usualmente UTC). 
   // 8:00 PM Perú (GMT-5) es 1:00 AM del día siguiente en UTC.
   const calendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baby+Shower+Gabriel+Rafael&dates=20260222T010000Z/20260222T050000Z&details=Te+esperamos+para+celebrar+la+llegada+de+Gabriel+Rafael!&location=Condominio+Nueva+Vista+-+Sala+SUM+2,+Av.+Venezuela+2597,+Bellavista,+Lima&ctz=America/Lima";
   // ---------------------------------------
+
+   // --- LÓGICA PARA APPLE CALENDAR (.ics) ---
+  const appleCalendarUrl = `data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:${startDate}%0ADTEND:${endDate}%0ASUMMARY:${encodeURIComponent(eventTitle)}%0ADESCRIPTION:${encodeURIComponent(eventDetails)}%0ALOCATION:${encodeURIComponent(eventLocation)}%0AEND:VEVENT%0AEND:VCALENDAR`;
+
 
   return (
     <section className="py-12 px-4 relative z-20">
@@ -55,7 +66,18 @@ const EventDetails = () => {
                 Agendar en Google Calendar
               </button>
             </a>
-            {/* --------------------------- */}
+            
+            {/* Botón Apple Calendar */}
+              <a 
+                href={appleCalendarUrl}
+                download="evento.ics"
+                className="block w-full mt-2"
+              >
+                <button className="w-full flex items-center justify-center gap-2 bg-slate-800 text-white py-2.5 px-4 rounded-xl font-body font-medium shadow-sm hover:shadow-md hover:bg-slate-700 active:scale-95 transition-all text-sm">
+                  <CalendarPlus size={16} />
+                  Agendar en Apple Calendar
+                </button>
+              </a>
           </div>
 
           {/* Location */}

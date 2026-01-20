@@ -13,14 +13,12 @@ const GiftRegistry = () => {
     "Silla de comer para bebé 🍴",
     "Mecedora de bebé 🪑",    
     "Calentador de biberones ♨️",
-    "Biberones anticólicos 🍼",
+    "Biberón anticólico natural 🍼",
     "Kit de estimulación temprana 📚",
     "Almohada de lactancia 🤱",
     "Almohada antireflujo para bebé 🛏️",
     "Canguro o portabebé ergonómico 🧑‍🍼",
-    "Kit de cuidado para bebé (cortaúñas, cepillo, termómetro) 🩺",
-    "Baberos, mantas, toallas de baño 🧣",
-    "Ropita de recién nacido (bodys, etc) 👶",  
+    "Kit de cuidado para bebé (cortaúñas, cepillo, termómetro) 🩺",        
     "Juguetes de estimulación 🧸",    
     "O lo que nazca de tu corazón 💙"
   ];
