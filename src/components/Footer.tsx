@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="max-w-md mx-auto">
         <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-6" />
         <p className="font-script text-3xl text-gray-600 mb-4 animate-fade-in-up">
-          Agradeceré confirmar con anticipación para el registro de ingreso con Nombre y Apellido. Aforo limitado         
+          Agradeceré confirmar con anticipación para el registro de ingreso. Aforo limitado         
         </p>
         <p className="font-script text-3xl text-primary mb-4 animate-fade-in-up">
           ¡Te esperamos!
