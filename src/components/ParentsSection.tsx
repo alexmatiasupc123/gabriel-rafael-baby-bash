@@ -38,7 +38,7 @@ const ParentsSection = () => {
             Con mucho amor
           </p>
           <p className="font-body text-muted-foreground text-sm italic">
-            "Pronto estaré con ustedes, pero ahorita Diosito está pintando mis ojitos, mis manitas y pelito.¡Abran paso que estoy llegando! 💙"
+            "Pronto estaré con ustedes, pero ahorita Diosito está pintando mis ojitos, mis manitas y pelito. ¡Abran paso que estoy llegando! 💙"
           </p>
         </div>
       </div>

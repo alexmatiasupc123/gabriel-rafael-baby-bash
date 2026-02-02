@@ -1,19 +1,19 @@
 import { Calendar, Clock, MapPin, CalendarPlus,Command } from "lucide-react";
 
 const EventDetails = () => {
-  const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Av.+Venezuela+2597+Bellavista+Condominio+Nueva+Vista+Lima+Peru";
+  const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Av.+Precusores+750+San+Miguel+Lima+Peru";
 
-  const startDate = "20260222T010000Z"; 
-  const endDate = "20260222T050000Z"; 
+  const startDate = "20260229T010000Z"; 
+  const endDate = "20260229T050000Z"; 
     const eventTitle = "Baby Shower Gabriel Rafael";
   const eventDetails = "Acompáñanos a celebrar la llegada de Gabriel Rafael.";
-  const eventLocation = "Condominio Nueva Vista - Sala SUM 2, Av. Venezuela 2597, Bellavista, Lima, Perú";
+  const eventLocation = "Av. De Los Precursores 750 Dpto 203, San Miguel, Lima, Perú";
   
 
   // --- LÓGICA AGREGADA PARA CALENDARIO ---
   // Las fechas para Google Calendar deben ser precisas (usualmente UTC). 
   // 8:00 PM Perú (GMT-5) es 1:00 AM del día siguiente en UTC.
-  const calendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baby+Shower+Gabriel+Rafael&dates=20260222T010000Z/20260222T050000Z&details=Te+esperamos+para+celebrar+la+llegada+de+Gabriel+Rafael!&location=Condominio+Nueva+Vista+-+Sala+SUM+2,+Av.+Venezuela+2597,+Bellavista,+Lima&ctz=America/Lima";
+  const calendarUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baby+Shower+Gabriel+Rafael&dates=20260222T010000Z/20260222T050000Z&details=Te+esperamos+para+celebrar+la+llegada+de+Gabriel+Rafael!&location=Av.+Precusores+750,+San+Miguel,+Lima&ctz=America/Lima";
   // ---------------------------------------
 
    // --- LÓGICA PARA APPLE CALENDAR (.ics) ---
@@ -36,7 +36,7 @@ const EventDetails = () => {
               </div>
               <div>
                 <p className="font-body text-muted-foreground text-sm uppercase tracking-wider">Fecha</p>
-                <p className="font-script text-2xl text-foreground">Sábado 21 de Febrero del 2026</p>
+                <p className="font-script text-2xl text-foreground">Sábado 28 de Febrero del 2026</p>
               </div>
             </div>
           </div>
@@ -88,9 +88,9 @@ const EventDetails = () => {
               </div>
               <div className="flex-1">
                 <p className="font-body text-muted-foreground text-sm uppercase tracking-wider">Ubicación</p>
-                <p className="font-script text-xl text-foreground">Condominio Nueva Vista - Sala SUM 2</p>
+                <p className="font-script text-xl text-foreground">Av.De Los Precursores 750 - San Miguel</p>
                 <p className="font-body text-sm text-muted-foreground mt-1">
-                  Av. Venezuela 2597 - Bellavista
+                  Dpto. 203
                 </p>
               </div>
             </div>
@@ -105,7 +105,7 @@ const EventDetails = () => {
           >
             <div className="gradient-card rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-shadow duration-300">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.894889!2d-77.0967!3d-12.0622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20Venezuela%202597%2C%20Bellavista!5e0!3m2!1ses!2spe!4v1600000000000!5m2!1ses!2spe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.894889!2d-77.0967!3d-12.0622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20De%20Los%20Precursores%20750%2C%20San%20Miguel!5e0!3m2!1ses!2spe!4v1600000000000!5m2!1ses!2spe"
                 width="100%"
                 height="200"
                 style={{ border: 0 }}

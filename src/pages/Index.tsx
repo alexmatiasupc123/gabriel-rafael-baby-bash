@@ -25,8 +25,7 @@ const Index = () => {
         <HeroSection />
         <ParentsSection />
         <CountdownTimer />
-        <EventDetails />
-        <GiftRegistry />
+        <EventDetails />     
         <Footer />
       </main>
     </div>

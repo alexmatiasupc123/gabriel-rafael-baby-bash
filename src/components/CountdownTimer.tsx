@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import babyPhoto from "@/assets/baby-photo.png";
 
 const CountdownTimer = () => {
-  const targetDate = new Date("2026-02-21T20:00:00").getTime();
+  const targetDate = new Date("2026-02-28T20:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

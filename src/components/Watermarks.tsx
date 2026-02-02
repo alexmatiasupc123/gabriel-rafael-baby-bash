@@ -11,7 +11,7 @@ const Watermarks = () => {
         ♡ Gabriel ♡
       </div>
       <div className="watermark top-[60%] left-1/2 rotate-[5deg] -translate-x-1/2">
-        21.02.2026
+        28.02.2026
       </div>
     </>
   );

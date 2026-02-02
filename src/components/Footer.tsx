@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 const Footer = () => {
   // Reemplaza con tu número real (código de país + número, sin espacios ni símbolos)
   const phoneNumber = "51992962762"; 
-  const message = "Hola Alex y Valeria, quiero confirmar mi asistencia.";
+  const message = "Hola Valeria y Alex, les confirmo mi asistencia :D";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="max-w-md mx-auto">
         <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-6" />
         <p className="font-script text-3xl text-gray-600 mb-4 animate-fade-in-up">
-          Agradeceré confirmar con anticipación para el registro de ingreso. Aforo limitado         
-        </p>
+          Agradeceremos confirmar con anticipación.         
+        </p>  
         <p className="font-script text-3xl text-primary mb-4 animate-fade-in-up">
           ¡Te esperamos!
         </p>
