@@ -5,7 +5,7 @@ const GiftRegistry = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const gifts = [
-    "Extractor eléctrico de leche materna 🍼",
+    
     "Bañera plegable para bebé 🛁",
     "Pañalera funcional 🎒",
     "Set de alimentación de silicona (platos, vasos, cubiertos) 🍽️",
