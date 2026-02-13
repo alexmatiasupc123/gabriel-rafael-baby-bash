@@ -4,9 +4,8 @@ import { Gift, X } from "lucide-react";
 const GiftRegistry = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const gifts = [
-    
-    "Bañera plegable para bebé 🛁",
+  const gifts = [    
+   
     "Pañalera funcional 🎒",
     "Set de alimentación de silicona (platos, vasos, cubiertos) 🍽️",
     "Aspirador o Succionador Eléctrico Nasal para bebé👃",
@@ -20,6 +19,7 @@ const GiftRegistry = () => {
     "Canguro o portabebé ergonómico 🧑‍🍼",
     "Kit de cuidado para bebé (cortaúñas, cepillo, termómetro) 🩺",        
     "Juguetes de estimulación 🧸",    
+    "Set de pisos de goma para bebé 🧩",
     "O lo que nazca de tu corazón 💙"
   ];
 
